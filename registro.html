@@ -23,190 +23,80 @@
 <body>
 
 
-<div class="container centered">
-
-    
-    <div class="register">
-
-    <div class="row">
-
-        <div class="col-md-3 register-left">
-            <img src="imagenes/logo_mono2.png" alt=""/>
-            <h3>Bienvenido</h3>
-            <p>Registrate y accdede a tu panel de usuario</p>
-
-            <input type="submit" value="Login" class="btn login_btn_En_pageRegistrar" onclick="login()">
-
-        </div>
-
-        <div class="col-md-9 register-right">
+    <div class="container centered">
 
 
-            <div class="tabbable-panel">
+        <div class="register">
 
+            <div class="row">
 
-                <div class="tabbable-line">
+                <div class="col-md-3 register-left">
+                    <img src="imagenes/logo_mono2.png" alt=""/>
+                    <h3>Bienvenido</h3>
+                    <p>Registrate y accdede a tu panel de usuario</p>
 
-                    <ul class="nav nav-tabs">
-                        <li class="active">
-                            <a href="#tab_default_1" data-toggle="tab">
-                            Empleado </a> <br>
-                        </li>
-
-                        <li>
-                            <a href="#tab_default_2" data-toggle="tab">
-                            Administrador </a>
-                        </li>
-
-                    </ul>
-
-                    
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="tab_default_1">
-
-                            <h3 class="register-heading">Regístrate como empleado</h3>
-                            
-                            <form>
-
-                                <div class="row register-form">
-
-
-                                    <div class="col-md-6">
-
-
-
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Nombre *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Apellidos *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control" placeholder="Contraseña *" value="" />
-                                        </div>
-
-                                        <div class="col-md-12 centrado">
-                                            <div class="maxl">
-                                                <label class="radio inline"> 
-                                                    <input type="radio" name="Sexi" value="Hombre" checked>
-                                                    <span> Hombre </span> 
-                                                </label>
-                                                <label class="radio inline"> 
-                                                    <input type="radio" name="gender" value="Mujer">
-                                                    <span>Mujer </span> 
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Tu Email *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Tu telefono *" value="" />
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control"  placeholder="Confirmar contraseña *" value="" />
-                                        </div>
-
-                                        <input type="button" value="Registrarme" class="btn login_btn" onclick="fichado()">  
-
-                                        <br>Botones provisionales para ir a otras vistas
-                                        <input type="button" value="Panel empleado" class="btn login_btn_extra" onclick="panel_empleado()" style="margin-bottom: 10px;">  
-                                        <input type="button" value="Panel adm" class="btn login_btn_extra" onclick="panel_administrador()" style="margin-bottom: 10px;">  
-
-                                    </div>
-
-                                </div>
-                            </form>
-
-                        </div>
-
-                        <div class="tab-pane" id="tab_default_2">
-
-
-
-
-
-                         <h3 class="register-heading">Regístrate como admin</h3>
-
-                         <form>
-
-                            <div class="row register-form">
-
-
-                                <div class="col-md-6">
-
-
-
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nombre *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Apellidos *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control" placeholder="Contraseña *" value="" />
-                                    </div>
-
-                                    <div class="col-md-12 centrado">
-                                        <div class="maxl">
-                                            <label class="radio inline"> 
-                                                <input type="radio" name="Sexi" value="Hombre" checked>
-                                                <span> Hombre </span> 
-                                            </label>
-                                            <label class="radio inline"> 
-                                                <input type="radio" name="gender" value="Mujer">
-                                                <span>Mujer </span> 
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Tu Email *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" minlength="10" maxlength="10" name="txtEmpPhone" class="form-control" placeholder="Tu telefono *" value="" />
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="password" class="form-control"  placeholder="Confirmar contraseña *" value="" />
-                                    </div>
-
-                                    <input type="button" value="Registrarme" class="btn login_btn" onclick="fichado()">  
-
-                                    <br style="color red;">Botones provisionales para ir a otras vistas
-                                    <input type="button" value="Panel empleado" class="btn login_btn_extra" onclick="panel_empleado()" style="margin-bottom: 10px;">  
-                                    <input type="button" value="Panel adm" class="btn login_btn_extra" onclick="panel_administrador()" style="margin-bottom: 10px;">  
-
-                                </div>
-
-                            </div>
-                        </form>
-
-
-
-
-
-
-
-                    </div>
-
+                    <input type="submit" value="Login" class="btn btn_login_en_pag_registro" onclick="login()">
 
                 </div>
 
+                <div class="col-md-9 register-right">                                       
 
 
 
+                    <h3 class="register-heading">Regístrate</h3>
+
+                    <form>
+
+                        <div class="row register-form">
+
+
+                            <div class="col-md-6">
+
+
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nombre *" value="" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="DNI *" value="" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Contraseña *" value="" />
+                                </div>
+
+
+                            </div>
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Apellidos *" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Tu Email *" value="" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control"  placeholder="Confirmar contraseña *" value="" />
+                                </div>
+
+                                <input type="button" value="Registrarme" class="btn btn_registro" onclick="fichado()">  
+
+                                <br>Botones provisionales para ir a otras vistas
+                                <input type="button" value="Panel empleado" class="btn login_btn_extra" onclick="panel_empleado()" style="margin-bottom: 10px;">  
+                                <input type="button" value="Panel adm" class="btn login_btn_extra" onclick="panel_administrador()" style="margin-bottom: 10px;">  
+
+                            </div>
+
+                        </div>
+                    </form>
+
+                </div>
             </div>
         </div>
     </div>
-</div>
 
-</div>
-
-</div>
-</div>
 
 
 <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>       
@@ -224,7 +114,7 @@
 <script type="text/javascript">
 function login() {
 
-    window.location = "login.html";
+    window.location = "index.html";
 
 }
 
