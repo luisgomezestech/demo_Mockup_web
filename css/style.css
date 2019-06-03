@@ -3,6 +3,9 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
 
+@font-face { font-family: computer_pixel-7; src: url('../fonts/computer_pixel-7.ttf'); } 
+
+
 body {
         background: -webkit-linear-gradient(top, #00fa9a, #f9d59f);
         font-family: 'Source Sans Pro', sans-serif;
@@ -99,7 +102,7 @@ body {
 
     }
 
-
+    /* Abre la web con efecto FadeIn */
     .loader {
         position: fixed;
         left: 0px;
@@ -129,6 +132,11 @@ body {
         align-items: center;
         text-align: center;
 
+    }
+
+    .nombreApp {
+        font-family: computer_pixel-7;
+        font-size: 30px;
     }
 
     .titulo_pag_login {
@@ -390,7 +398,7 @@ border:0 !important;
 }
 
 .register .register-form{
-    padding: 10%;
+    padding: 0% 10% 0% 10%;
     margin-top: 10%;
 }
 
@@ -473,12 +481,12 @@ thead input {
 
 table {
     width: 100%;
-    background: rgba(0,0,0,0.7);
-    color: #fff; /* Color de todas */
+    background: rgba(255,255,255,0.7);
+    color: #000; /* Color de todas */
 }
 
 table tbody tr:nth-child(2n+2) {
-    background: #f4f4f4;
+    background: #F9D59F !important;
     color:#000; /* Color fila 2 */
 
 }
@@ -506,7 +514,6 @@ table th {
 }
 
 table thead {
-    background: #444;
     color: #fff;
 
 }
