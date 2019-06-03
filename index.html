@@ -1,69 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<title>Fichado Web</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta charset="UTF-8">
+  <title>Fichado Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    <link rel="icon" type="image/png" href="imagenes/favicon.ico" />
 
-	<link rel="icon" type="image/png" href="imagenes/favicon.ico" />
-	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Mi style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<!-- Mi style -->
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	
 
 </head>
 
 <body>
 
+<div class="loader" style="background: #000"></div>
 
 
-		<div class="container centered">	
+<div class="container centered">
 
-			<div class="container">			
+    
+    <div class="register">
 
-				<div class="loader"></div>
-				<div class="centered">        
+        <div class="row">
+                   
+            <div class="col-md-4 register-left">
 
-				<img src="imagenes/logo_mono2.png" class="" alt="mono" style="width: 100px;"> 
-
-				</div>
-
-			</div>
-
-		</div>
-
-
-	<!-- Lbreria jquery -->
-
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+                <img src="imagenes/logo_mono2.png" alt=""/>
+                <h3>Bienvenido</h3>
+	            <h6>Accede a tu cuenta</h6>   
+               
+            </div>
 
 
-			<script type="text/javascript">
+            <div class="col-md-8 register-right">                             
+                        	
+    	        <div class="centrado">
+	            
+	            <h3 class="titulo_pag_login">Acceso a la plataforma</h3>
+	                
+	            </div>
+           
+                                       
+                 <br>                      
 
-			//LOADING
 
-			$(function() {
+                <form class="col-md-12">
 
-			  //Loading
-			  $(".loader").fadeOut(2000);
+            	    <div class="input-group form-group">
+                	    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+                    	</div>
+                      	<input type="email" class="form-control" placeholder="Email" width="200px">
 
-			});
+                    </div>
 
-			setTimeout("redireccionarPagina()", 2500);
+                    <div class="input-group form-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                      </div>
+                      <input type="password" class="form-control" placeholder="Contraseña">
+                    </div>
 
-			function redireccionarPagina() {
+                    <div class="row align-items-center remember">
+                      <input type="checkbox">Recordarme</input>
+                    </div>
 
-				window.location = "login.html";
+                    <div class="form-group">
 
-			}
+                    	<div class="links">
 
-			</script>
+                        	 <a href="#">¿Has olvidado la contraseña?</a>                 		
+                		
+                        </div>
+                      	
+                        <input type="submit" value="Login" class="btn btn_login">
+                        
+                        <br>
+
+                         ¿Aún no tienes cuenta?   
+
+                         <br>
+                  
+ 				<input type="button" value="Regístrate" class="btn btn_registro_en_pag_Login" onclick="registro()">     
+
+                    </div>
+
+                </form>
+
+    
+
+
+              <!-- Diferente footer login
+
+                  <div class="card-footer">
+
+                  <div class="d-flex justify-content-center links">
+                    ¿Aún no tienes cuenta? </> <a href="#" style="margin-left: 5px;">Regístrate</a>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <a href="#">¿Has olvidado la contraseña?</a>
+                  </div>
+
+              </div>
+            -->
+
+
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Lbreria jquery -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+
+             
+<!-- SCRIPT PROVISIONALES PARA VER MAQUETACION -->
+
+<script type="text/javascript">
+
+      //LOADING
+
+      $(function() {
+
+        //Loading
+        $(".loader").fadeOut(2000);
+
+      });
+
+      
+</script>
+
+
+
+
+<script type="text/javascript">
+function registro() {
+   
+    window.location = "registro.html";
+  
+}
+
+function fichado() {
+   
+    window.location = "fichado.html";
+  
+}
+
+
+
+</script>
+
 
 
 </body>
